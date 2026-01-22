@@ -12,12 +12,12 @@ function setup() {
 
 function draw() {
   background(bg);
-
-bezier(0, 0, mouseX, y, x, mouseY, width, height);
-x += random(-speed, speed); //redraw at random vertical direction between -2.5 and 2.5
-y += random(-speed, speed);
+console.log(mouseX,mouseY)
+bezier(0, 0,305, y, x, 50, width, height);
+// x += random(-speed, speed); //redraw at random vertical direction between -2.5 and 2.5
+// y += random(-speed, speed);
 fill(150,y+150,x+150)
-// bezier(width,0, 666, 350, 0,0, height/2, 0);
+bezier(width/2,100, 800,400 ,width/5,height/5, width/2, height/2);
 }
 function windowResized() {
   resizeCanvas(windowWidth,windowHeight);
