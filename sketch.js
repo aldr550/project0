@@ -21,18 +21,20 @@ function draw() {
 // }
 // endShape();
 // }
-bezier(0, 0, 100, 200, 150, 250, width, height);
-myTriangle(.05, mouseX, mouseY);
+bezier(0, 0, 923, 59, 150, 250, width, height);
+// bezier(width,0, 666, 350, 0,0, height/2, 0);
+
+// myTriangle(.05, mouseX, mouseY);
 console.log("mouseX: "+mouseX, "mouseY: "+mouseY);
 }
 function windowResized() {
   resizeCanvas(windowWidth,windowHeight);
   bg = color(random(255), random(150),random(255));
 }
-function myTriangle(amountOfWindow, x, y){
-  push();
-  const size = width * amountOfWindow;
-  translate(x,y);
-  triangle(0,0, size, size*2, -size, size*2);
-  pop();
-}
+// function myTriangle(amountOfWindow, x, y){
+//   push();
+//   const size = width * amountOfWindow;
+//   translate(x,y);
+//   triangle(0,0, size, size*2, -size, size*2);
+//   pop();
+// }
